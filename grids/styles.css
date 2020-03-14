@@ -1,0 +1,110 @@
+body{
+margin: 0;
+font-family: 'Lato', sans-serif;
+}
+.hero{
+	background: #23475b;
+	color: white;
+	padding: 32px 15px;
+	display: grid;
+	grid-template-columns: minmax(auto, 1024px);
+	justify-content: center;
+ }
+.hero-container{
+	display: grid;
+	grid-template-columns: 70px 1fr 320px;
+	grid-template-areas: "badge title form"
+											 ". description form"
+											 ". countdown form";
+	grid-gap: 10px;
+	}
+	.badge{
+		grid-area: badge;
+		}
+	.badge img {
+		max-width: 70px;
+		}
+ .description{
+	font-size: 16px;
+	color: white;
+	font-weight: normal;
+	grid-area: description;
+	}
+ .title{
+	 grid-area: title;
+	font-size: 36px;
+	font-weight: 600;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	}
+ form{
+	 grid-area: form;
+ background: rgba(255, 255, 255, 0.8);
+ border-radius: 10px;
+ text-align: center;
+ padding: 1.5em;
+ }
+ .form input {
+	background: rgba(255, 255, 255);
+	border-radius: 5px;
+	width: 100%;
+	padding: 10px;
+	font-size: 16px;
+	border: 1px solid #dbdbe2;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	color: #245672;
+	font-weight: 600;
+	}
+	.form p{
+		font-size: 20px;
+		margin-bottom: 10px;
+		color: #3a3b3f;
+		}
+	.form button {
+		font-size: 15px;
+		margin-bottom: 10px;
+		color: white;
+		background: #79c611;
+		border-radius: 7px;
+		padding: 10px 15px;
+		font-weight: 600;
+		border: none;
+		border-bottom: 5px solid #6d932b;
+		display: inline-block;
+		}
+	.countdown{
+		grid-area: countdown;
+		}
+	.countdown p{
+		font-size: 20px;
+		text-align: center;
+		font-weight: 300;
+		}
+	.countdown span {
+		font-size: 33px;
+		}
+	.countdown span:after{
+		content: ":";
+		display: inline-block;
+		margin: 0 5px;
+		}
+	.countdown span:last-child::after{
+		display: none;
+		}
+	p{
+		margin: 0;
+	}
+	@media screen and (max-width: 768px){
+		.hero-container{
+			grid-template-columns: 70px 1fr;
+			grid-template-areas: "badge title"
+														"description description"
+														"form form"
+													 "countdown countdown";
+	}
+}
+
+

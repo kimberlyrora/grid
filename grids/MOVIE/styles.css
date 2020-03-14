@@ -1,0 +1,87 @@
+body{
+	margin: 0;
+	font-family: Arial;
+}
+header{
+	background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(214,209,87,1) 23%, rgba(14,198,84,1) 77%);	
+	height: 76px;
+	display: grid;
+	grid-template-columns: 10% 70% 20%;
+	grid-template-areas: "logo search user";
+	width:100%;
+}
+.logo{
+	border-radius: 50px;
+	margin-left: 30px;
+	grid-area: logo;
+}
+header img{
+	padding-top: 5px;
+	padding-left: 1px;
+	width: 52px;
+	height: 58px;
+	object-fit: fill;
+}
+header input {
+	height: 33px;
+	border-radius: 5px;
+	border: none;
+	align-self: center;
+	border: 1px solid gray;
+	font-family: Arial;
+	font-size: 15px;
+	font-weight: 500;
+	grid-area: search;
+}
+.user{
+	display: flex;
+	color: white;
+	align-self: center;
+	grid-area: user;
+	justify-content: flex-end;
+  padding-right: 25px;
+}
+.user p{
+	align-self: center;
+}
+.container{
+	display: flex;
+  background: yellowgreen;
+}
+.menu{
+	background: red;
+}
+.home{
+	width: 40px;
+	height: 40px;
+}
+.trending{
+	width: 47px;
+	height: 47px;
+}
+.likes{
+	width: 54px;
+	height: 54px;
+}
+.ajustes{
+	width: 48px;
+  height: 48px;
+}
+.main{
+	display: grid;
+	background: yellow;
+	justify-content: center;
+	width: 100%;
+} 
+.main img{
+	width: 300px;
+}
+.estrenos{
+	display: flex;
+}
+.aclamadas{
+	display: flex;
+}
+.imperdibles{
+	display: flex;
+}
